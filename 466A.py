@@ -1,9 +1,7 @@
+#problem done and submitted
 n,m,a,b = map(int,input().split())
-
-if m *b <= n*a:
-    ans = (n//m)*b + (n%m)*a
-
+if m * a > b:
+    fees = (n//m)*b + min((n%m)*a,b) 
 else:
-    ans = n*a
-
-print(ans)
+    fees = n*a
+print(fees)
